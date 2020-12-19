@@ -131,8 +131,7 @@
                     </tr>
                     @{var quarter_classes = from course in Model._classes
                                               where course.Quarter == quarter
-                                              orderby
-course.CourseID ascending
+                                              orderby course.CourseID ascending
                                               select course; }
 
 
